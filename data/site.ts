@@ -152,21 +152,21 @@ export const processSteps = [
 export const testimonials = [
   {
     quote:
-      "The final product looked sharper than expected and the process was structured from day one. It felt like working with a senior product team, not a solo freelancer.",
-    name: "Sarah Kim",
-    role: "Founder, NovaFlow",
+      "Patrik helped turn Puppynator into a stronger product experience with custom functionality, sharp implementation, and reliable technical delivery.",
+    name: "Rastislav Belko",
+    role: "CEO, Puppynator",
   },
   {
     quote:
-      "Strong communication, clean execution, and a noticeably premium result. The site immediately increased confidence during investor and client conversations.",
-    name: "Daniel Ross",
-    role: "Co-Founder, ChainPort",
+      "The final result felt modern, polished, and much more aligned with the direction of the brand. Execution was fast and highly professional.",
+    name: "Afro Futuristic",
+    role: "Founder, Supafuse",
   },
   {
     quote:
       "Fast, detail-oriented, and technically reliable. The balance between design quality and development discipline was exactly what we needed.",
     name: "Maya Patel",
-    role: "Product Lead, Atlas Finance",
+    role: "Product Lead",
   },
 ];
 
