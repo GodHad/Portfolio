@@ -9,27 +9,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name | React Developer | AI Automation | Web3 Builder",
+  title: "Patrik Lacko | Full-Stack Developer for React, fabric.js, AI, and Web3",
   description:
-    "Modern premium portfolio for a React developer building frontend, full-stack, AI automation, and Web3 products.",
+    "Premium portfolio of Patrik Lacko, focused on React, fabric.js, Laravel, AI integrations, automation, and Web3 product development.",
   keywords: [
+    "Patrik Lacko",
     "React developer",
-    "Next.js portfolio",
+    "fabric.js developer",
     "AI automation developer",
     "Web3 developer",
-    "frontend engineer",
+    "Laravel developer",
+    "full-stack engineer",
   ],
   openGraph: {
-    title: "Your Name | React Developer | AI Automation | Web3 Builder",
+    title: "Patrik Lacko | Full-Stack Developer for React, fabric.js, AI, and Web3",
     description:
-      "Premium portfolio built for client trust, startup credibility, and modern web product work.",
+      "Premium portfolio built to showcase React, fabric.js, Laravel, AI integrations, automation, and Web3 product work.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name | React Developer | AI Automation | Web3 Builder",
+    title: "Patrik Lacko | Full-Stack Developer for React, fabric.js, AI, and Web3",
     description:
-      "Premium portfolio built for client trust, startup credibility, and modern web product work.",
+      "Premium portfolio built to showcase React, fabric.js, Laravel, AI integrations, automation, and Web3 product work.",
   },
 };
 
