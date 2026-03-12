@@ -25,7 +25,7 @@ export function ContactSection({ email, socialLinks }: ContactSectionProps) {
             <SectionHeading
               eyebrow="Contact"
               title="If you need a product that looks expensive, works properly, and is built to move the business forward, lets talk."
-              description="Reach out directly by email, GitHub, or LinkedIn. The contact area is now intentionally simple and clean."
+              description="Reach out by email, GitHub, or LinkedIn."
             />
 
             <p className="text-base leading-8 text-slate-300">
