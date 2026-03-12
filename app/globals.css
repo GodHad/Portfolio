@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.12), transparent 28%),
+    linear-gradient(180deg, #020617 0%, #050816 42%, #020617 100%);
+}
+
+body::selection {
+  background: rgba(103, 232, 249, 0.3);
+  color: #ffffff;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  * {
+    @apply border-slate-800;
+  }
+
+  body {
+    @apply text-slate-100;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+  .balanced-text {
+    text-wrap: balance;
+  }
+
+  .tilt-shell {
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt-shell {
+    transform: none !important;
+  }
+}
