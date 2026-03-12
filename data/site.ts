@@ -85,7 +85,7 @@ export const skills = [
   },
 ];
 
-export const projectCategories = ["All", "Frontend", "Full-Stack", "AI", "Web3", "Ecommerce"] as const;
+export const projectCategories = ["All", "AI", "Web3", "Ecommerce"] as const;
 
 export const projects = [
   {
@@ -95,7 +95,7 @@ export const projects = [
       "A product customization and print ecommerce experience built around a fabric.js editor, React frontend flows, Symfony backend logic, and AI-powered assistance for personalization and support.",
     tech: ["fabric.js", "React", "Symfony", "AI integration", "AI chatbot"],
     image: "/assets/projects/puppynator.png",
-    demoHref: "https://www.puppynator.sk/potlac-e190-panske-tricko-s-kratkym-rukavom-bc-collection"
+    demoHref: "https://www.puppynator.sk/"
   },
   {
     title: "Signalyze",
