@@ -42,10 +42,10 @@ export function HeroSection({ name, title, intro, availability, socialLinks }: H
           >
             <p className="text-sm uppercase tracking-[0.35em] text-slate-400">{name}</p>
             <h1 className="max-w-5xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Full-stack products for startups, automation-first businesses, and modern Web3 teams.
+              {title}
             </h1>
             <p className="max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
-              {title}. {intro}
+              {intro}
             </p>
           </motion.div>
 
@@ -66,7 +66,7 @@ export function HeroSection({ name, title, intro, availability, socialLinks }: H
               href="#contact"
               className="inline-flex items-center justify-center rounded-full border border-white/[0.12] bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
             >
-              Contact Me
+              Start a Conversation
             </Link>
           </motion.div>
 
@@ -106,32 +106,32 @@ export function HeroSection({ name, title, intro, availability, socialLinks }: H
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-[1.5rem] border border-white/10 bg-slate-900/80 p-5">
                 <p className="text-sm text-slate-400">Primary focus</p>
-                <p className="mt-3 text-2xl font-semibold text-white">AI-ready product experiences</p>
+                <p className="mt-3 text-2xl font-semibold text-white">Startup products that need real engineering depth</p>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
-                  Premium products engineered to combine strong UI, fabric.js interactions, and business-focused execution.
+                  The best fit is usually a product that needs sharp frontend execution, solid backend decisions, and delivery that can keep up with the business.
                 </p>
               </div>
               <div className="rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-cyan-400/[0.15] to-violet-500/10 p-5">
                 <p className="text-sm text-slate-400">Delivery style</p>
-                <p className="mt-3 text-2xl font-semibold text-white">Fast, structured, polished</p>
+                <p className="mt-3 text-2xl font-semibold text-white">Senior, direct, and execution-focused</p>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
-                  Clean communication, well-scoped execution, and a product mindset from kickoff to launch.
+                  Clear communication, sensible architecture, and product-minded implementation from early planning through launch.
                 </p>
               </div>
             </div>
 
             <div className="mt-4 rounded-[1.5rem] border border-white/10 bg-slate-900/70 p-5">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-slate-400">Current positioning</span>
+                <span className="text-sm text-slate-400">Where I add the most value</span>
                 <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs uppercase tracking-[0.24em] text-emerald-300">
-                  Freelance Ready
+                  9+ Years
                 </span>
               </div>
               <div className="mt-6 grid gap-4 sm:grid-cols-3">
                 {[
-                  ["React + Next.js", "Premium frontend systems"],
-                  ["AI Automation", "Workflows and assistants"],
-                  ["Web3 Products", "Modern interfaces that build trust"],
+                  ["Interactive frontends", "Fabric.js builders, premium UI systems, product surfaces"],
+                  ["AI workflows", "Automation, copilots, assistants, and operational tooling"],
+                  ["Full-stack delivery", "Frontend, backend, integrations, architecture, and launch"],
                 ].map(([headline, copy]) => (
                   <div key={headline} className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <p className="text-sm font-medium text-white">{headline}</p>

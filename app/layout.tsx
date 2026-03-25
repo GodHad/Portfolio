@@ -9,29 +9,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Patrik Lacko | Full-Stack Developer for React, fabric.js, AI, and Web3",
+  title: "Patrik Lacko | Senior Full-Stack Engineer for Startup Products, AI Workflows, and Interactive Web Apps",
   description:
-    "Premium portfolio of Patrik Lacko, focused on React, fabric.js, Laravel, AI integrations, automation, and Web3 product development.",
+    "Portfolio of Patrik Lacko, a senior full-stack engineer building startup products, AI workflows, advanced interactive web apps, and production-ready full-stack systems.",
   keywords: [
     "Patrik Lacko",
-    "React developer",
+    "senior full-stack engineer",
+    "startup product engineer",
     "fabric.js developer",
-    "AI automation developer",
+    "AI workflow engineer",
     "Web3 developer",
     "Laravel developer",
-    "full-stack engineer",
+    "interactive web app developer",
   ],
   openGraph: {
-    title: "Patrik Lacko | Full-Stack Developer for React, fabric.js, AI, and Web3",
+    title: "Patrik Lacko | Senior Full-Stack Engineer for Startup Products, AI Workflows, and Interactive Web Apps",
     description:
-      "Premium portfolio built to showcase React, fabric.js, Laravel, AI integrations, automation, and Web3 product work.",
+      "Senior full-stack engineering for startup products, AI workflows, fabric.js experiences, and production-ready web platforms.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Patrik Lacko | Full-Stack Developer for React, fabric.js, AI, and Web3",
+    title: "Patrik Lacko | Senior Full-Stack Engineer for Startup Products, AI Workflows, and Interactive Web Apps",
     description:
-      "Premium portfolio built to showcase React, fabric.js, Laravel, AI integrations, automation, and Web3 product work.",
+      "Senior full-stack engineering for startup products, AI workflows, fabric.js experiences, and production-ready web platforms.",
   },
 };
 

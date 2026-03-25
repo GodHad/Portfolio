@@ -11,10 +11,16 @@ import { TiltCard } from "@/components/tilt-card";
 type Project = {
   title: string;
   category: string;
-  description: string;
+  role: string;
+  summary: string;
+  problem: string;
+  contribution: string;
+  impact: string;
   tech: readonly string[];
+  highlights: readonly string[];
   image: string;
   demoHref: string;
+  demoLabel: string;
 };
 
 type ProjectsSectionProps = {
@@ -38,8 +44,8 @@ export function ProjectsSection({ projects, categories }: ProjectsSectionProps) 
       <div className="mx-auto max-w-7xl [perspective:1400px]">
         <SectionHeading
           eyebrow="Projects"
-          title="Featured work presented in a way that feels premium before a client clicks anything."
-          description="Projects are stored in a separate data file for easy editing. Replace the sample content without touching the section layout."
+          title="Selected work that shows how I approach product challenges, not just how I style cards."
+          description="A curated set of builds across ecommerce, AI, and Web3, with the product context, engineering role, and delivery value made clear."
           action={
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
@@ -95,8 +101,29 @@ export function ProjectsSection({ projects, categories }: ProjectsSectionProps) 
                   <div className="space-y-5 p-6">
                     <div>
                       <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
-                      <p className="mt-3 text-sm leading-7 text-slate-400">{project.description}</p>
+                      <p className="mt-2 text-xs uppercase tracking-[0.24em] text-cyan-200/80">{project.role}</p>
+                      <p className="mt-4 text-sm leading-7 text-slate-300">{project.summary}</p>
                     </div>
+
+                    <div className="grid gap-3 text-sm leading-7 text-slate-400">
+                      <div>
+                        <span className="font-medium text-white">Problem:</span> {project.problem}
+                      </div>
+                      <div>
+                        <span className="font-medium text-white">Built:</span> {project.contribution}
+                      </div>
+                      <div>
+                        <span className="font-medium text-white">Why it matters:</span> {project.impact}
+                      </div>
+                    </div>
+
+                    <ul className="grid gap-2 text-sm text-slate-300">
+                      {project.highlights.map((highlight) => (
+                        <li key={highlight} className="rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3">
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
 
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((item) => (
@@ -116,7 +143,7 @@ export function ProjectsSection({ projects, categories }: ProjectsSectionProps) 
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-100"
                       >
-                        Visit Site
+                        {project.demoLabel}
                         <ExternalLinkIcon className="h-4 w-4" />
                       </Link>
                     </div>

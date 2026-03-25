@@ -10,10 +10,10 @@ type FeaturedCapability = {
 };
 
 export function ServicesSection({
-  skills,
+  services,
   featuredCapability,
 }: {
-  skills: { title: string; description: string }[];
+  services: { title: string; description: string }[];
   featuredCapability: FeaturedCapability;
 }) {
   return (
@@ -21,8 +21,8 @@ export function ServicesSection({
       <div className="mx-auto max-w-7xl [perspective:1400px]">
         <SectionHeading
           eyebrow="Services"
-          title="The capabilities clients hire when they need quality, clarity, and dependable execution."
-          description="Each offer is framed around outcomes that matter to founders, product teams, and businesses investing in serious web products."
+          title="What clients actually hire me for when the product needs both quality and momentum."
+          description="The offers are grouped around business outcomes: sharper product experiences, cleaner delivery, stronger systems, and less execution drag."
         />
 
         <TiltCard className="group mb-6 overflow-hidden rounded-[2rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-400/12 via-white/5 to-violet-500/10 p-6 shadow-[0_18px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl md:p-8" glareClassName="mix-blend-screen" maxSkew={3.2} maxDrift={5}>
@@ -44,9 +44,9 @@ export function ServicesSection({
         </TiltCard>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {skills.map((skill, index) => (
+          {services.map((service, index) => (
             <TiltCard
-              key={skill.title}
+              key={service.title}
               className="group rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition duration-300 hover:border-cyan-300/30 hover:bg-white/[0.07]"
               glareClassName="mix-blend-screen"
               maxSkew={3.8} maxDrift={6}
@@ -55,8 +55,8 @@ export function ServicesSection({
                 <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-400/20 to-violet-400/10 text-sm font-semibold text-cyan-200">
                   0{index + 1}
                 </div>
-                <h3 className="text-xl font-semibold text-white">{skill.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-400">{skill.description}</p>
+                <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">{service.description}</p>
               </article>
             </TiltCard>
           ))}

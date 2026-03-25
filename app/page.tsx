@@ -9,13 +9,14 @@ import { ProjectsSection } from "@/components/projects-section";
 import { ServicesSection } from "@/components/services-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import {
+  credibilityItems,
   featuredCapability,
   navLinks,
   personalInfo,
   processSteps,
   projectCategories,
   projects,
-  skills,
+  services,
   socialLinks,
   stats,
   testimonials,
@@ -39,12 +40,23 @@ export default function HomePage() {
         availability={personalInfo.availability}
         socialLinks={socialLinks}
       />
-      <AboutSection about={personalInfo.about} specialization={personalInfo.specialization} stats={stats} />
-      <ServicesSection skills={skills} featuredCapability={featuredCapability} />
+      <AboutSection
+        title={personalInfo.aboutTitle}
+        description={personalInfo.aboutDescription}
+        paragraphs={personalInfo.aboutParagraphs}
+        stats={stats}
+        credibilityItems={credibilityItems}
+      />
+      <ServicesSection services={services} featuredCapability={featuredCapability} />
       <ProjectsSection projects={projects} categories={projectCategories} />
       <ProcessSection steps={processSteps} />
       <TestimonialsSection testimonials={testimonials} />
-      <ContactSection email={personalInfo.email} socialLinks={socialLinks} />
+      <ContactSection
+        email={personalInfo.email}
+        title={personalInfo.contactTitle}
+        description={personalInfo.contactDescription}
+        socialLinks={socialLinks}
+      />
       <Footer name={personalInfo.name} links={navLinks} socialLinks={socialLinks} />
     </main>
   );

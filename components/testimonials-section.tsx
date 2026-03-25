@@ -7,8 +7,8 @@ export function TestimonialsSection({ testimonials }: { testimonials: { quote: s
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Testimonials"
-          title="Placeholder social proof, already styled to feel polished and trustworthy."
-          description="Swap these with real testimonials later. The card layout is ready for client names, roles, and concise proof statements."
+          title="A small selection of feedback from people I have worked with."
+          description="Kept intentionally concise. The goal is simple: give a clearer sense of how the work feels from the client and product side."
         />
 
         <div className="grid gap-4 lg:grid-cols-3">

@@ -21,7 +21,7 @@ export function Footer({
       <div className="mx-auto flex max-w-7xl flex-col gap-6 rounded-[1.8rem] border border-white/10 bg-white/5 px-6 py-6 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white">{name}</p>
-          <p className="mt-2 text-sm text-slate-400">(c) 2026 {name}. Built for premium client trust.</p>
+          <p className="mt-2 text-sm text-slate-400">(c) 2026 {name}. Senior full-stack engineering for modern product teams.</p>
         </div>
 
         <div className="flex flex-wrap gap-4 text-sm text-slate-300">

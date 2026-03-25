@@ -7,8 +7,8 @@ export function ProcessSection({ steps }: { steps: { title: string; description:
       <div className="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-transparent to-violet-400/10 p-6 md:p-8">
         <SectionHeading
           eyebrow="Process"
-          title="A client-friendly workflow that keeps ambitious projects clear and under control."
-          description="This section is designed to answer the unspoken client question: what is it actually like to work with you?"
+          title="A working style built to keep ambitious projects clear, moving, and under control."
+          description="The goal is straightforward: reduce ambiguity early, make progress visible, and keep quality high as the product takes shape."
         />
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">

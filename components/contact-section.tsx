@@ -7,6 +7,8 @@ import { SectionHeading } from "@/components/section-heading";
 
 type ContactSectionProps = {
   email: string;
+  title: string;
+  description: string;
   socialLinks: { label: string; href: string }[];
 };
 
@@ -16,20 +18,16 @@ const iconMap = {
   Email: MailIcon,
 };
 
-export function ContactSection({ email, socialLinks }: ContactSectionProps) {
+export function ContactSection({ email, title, description, socialLinks }: ContactSectionProps) {
   return (
     <AnimatedSection id="contact" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.25)] backdrop-blur-xl md:p-8">
         <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <SectionHeading
-              eyebrow="Contact"
-              title="If you need a product that looks expensive, works properly, and is built to move the business forward, lets talk."
-              description="Reach out by email, GitHub, or LinkedIn."
-            />
+            <SectionHeading eyebrow="Contact" title={title} description={description} />
 
             <p className="text-base leading-8 text-slate-300">
-              Best direct contact: {" "}
+              Best direct contact:{" "}
               <Link href={`mailto:${email}`} className="text-cyan-200 transition hover:text-cyan-100">
                 {email}
               </Link>
